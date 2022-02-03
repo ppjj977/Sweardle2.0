@@ -8,7 +8,7 @@ var col = 0; //current letter for that attempt
 var gameOver = false;
 var word = "MINGE";
 
-window.onload = function () {
+window.onload = function () { alert('Working!!'); }{
     intialize();
 }
 
