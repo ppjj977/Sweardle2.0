@@ -28,10 +28,10 @@ function intialize() {
     }
 
     // Listen for Key Press
-    document.addEventListener("keyup touchend", (e) => {
+    document.addEventListener("input", (updateValue) => {
         if (gameOver) return;
 
-       //  alert(e.code);
+       alert(updateValue);
         if ("KeyA" <= e.code && e.code <= "KeyZ") {
             if (col < width) {
                 let currTile = document.getElementById(row.toString() + '-' + col.toString());
