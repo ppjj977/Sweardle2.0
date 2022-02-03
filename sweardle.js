@@ -28,7 +28,7 @@ function intialize() {
     }
 
     // Listen for Key Press
-    document.addEventListener("keyup", (e) => {
+    document.addEventListener("keypress", (e) => {
         if (gameOver) return;
 
          alert(e.code);
