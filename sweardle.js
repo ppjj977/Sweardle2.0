@@ -6,7 +6,7 @@ var row = 0; //current guess (attempt #)
 var col = 0; //current letter for that attempt
 
 var gameOver = false;
-var word = "PENIS";
+var word = "MINGE";
 
 window.onload = function () {
     intialize();
