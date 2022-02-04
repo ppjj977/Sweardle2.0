@@ -31,7 +31,7 @@ function intialize() {
     document.addEventListener("keyup", (e) => {
         if (gameOver) return;
 
-   alert(String.fromCharCode(evt.keyCode));
+
         if ("KeyA" <= e.code && e.code <= "KeyZ") {
             if (col < width) {
                 let currTile = document.getElementById(row.toString() + '-' + col.toString());
