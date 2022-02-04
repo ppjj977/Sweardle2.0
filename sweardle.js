@@ -27,11 +27,11 @@ function intialize() {
         }
     }
 
- 
-    document.addEventListener("keyup", (e) => {
+    // Listen for Key Press
+    document.getElementsByName("Guess")[0].addEventListener("keyup", (e) => {
         if (gameOver) return;
 
-
+        // alert(e.code);
         if ("KeyA" <= e.code && e.code <= "KeyZ") {
             if (col < width) {
                 let currTile = document.getElementById(row.toString() + '-' + col.toString());
