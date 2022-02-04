@@ -6,7 +6,7 @@ var row = 0; //current guess (attempt #)
 var col = 0; //current letter for that attempt
 
 var gameOver = false;
-var word = "MINGE";
+var word = "SQUID";
 
 window.onload = function () {
     intialize();
@@ -28,10 +28,10 @@ function intialize() {
     }
 
     // Listen for Key Press
-    document.addEventListener(""keyup", (e) => {
+    document.addEventListener("keyup", (e) => {
         if (gameOver) return;
 
-      // alert(updateValue);
+        // alert(e.code);
         if ("KeyA" <= e.code && e.code <= "KeyZ") {
             if (col < width) {
                 let currTile = document.getElementById(row.toString() + '-' + col.toString());
