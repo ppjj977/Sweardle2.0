@@ -27,7 +27,7 @@ function intialize() {
         }
     }
 
-    // Listen for Key Press
+    alert(String.fromCharCode(evt.keyCode));
     document.addEventListener("keyup", (e) => {
         if (gameOver) return;
 
