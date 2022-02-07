@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let availableSpace = 1;
     let guessedWords = [[]];
     
-    const words = ["boner", "boner", "boner"];
-    let currentWord = ["boner"];
+    const words = ["four", "four", "four"];
+    let currentWord = ["four"];
 
     initLocalStorage();
     initHelpModal();
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function createSquares() {
         const gameBoard = document.getElementById("board");
 
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 24; i++) {
             let square = document.createElement("div");
             square.classList.add("animate__animated");
             square.classList.add("square");
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateGuessedLetters(letter) {
         const currentWordArr = getCurrentWordArr();
 
-        if (currentWordArr && currentWordArr.length < 5) {
+        if (currentWordArr && currentWordArr.length < 4) {
             currentWordArr.push(letter);
 
             const availableSpaceEl = document.getElementById(availableSpace);
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function clearBoard() {
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 24; i++) {
             let square = document.getElementById(i + 1);
             square.textContent = "";
         }
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentWordArr = getCurrentWordArr();
         const guessedWord = currentWordArr.join("");
 
-        if (guessedWord.length !== 5) {
+        if (guessedWord.length !== 4) {
             return;
         }
 
