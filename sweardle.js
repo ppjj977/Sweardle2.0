@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
           //  if (!res.ok) {
           //      throw Error();
          //   }
-            const firstLetterId = guessedWordCount * 5 + 1;
+            const firstLetterId = guessedWordCount * 4 + 1;
 
             localStorage.setItem("availableSpace", availableSpace);
 
